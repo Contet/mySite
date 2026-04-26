@@ -42,7 +42,7 @@ function renderMessages() {
   messagesEl.innerHTML = "";
 
   if (!messages.length) {
-    messagesEl.innerHTML = '<p class="meta-line">Пока нет сообщений.</p>';
+    messagesEl.innerHTML = '<p class="meta-line">Пока что задница в жопе.</p>';
     return;
   }
 
