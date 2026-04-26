@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Переписка двух людей</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="loginView" class="card">
+        <h1>Вход в чат</h1>
+        <p>Выберите, за кого войти:</p>
+
+        <div class="role-buttons">
+          <button id="person1Btn" class="btn btn-primary">Войти как Человек 1</button>
+          <button id="person2Btn" class="btn">Войти как Человек 2</button>
+        </div>
+      </section>
+
+      <section id="chatView" class="card hidden">
+        <div class="chat-header">
+          <h2>Чат</h2>
+          <div class="chat-meta">
+            <span id="currentRoleLabel"></span>
+            <button id="switchRoleBtn" class="btn btn-small">Сменить вход</button>
+          </div>
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+        <form id="messageForm" class="message-form">
+          <input
+            id="messageInput"
+            type="text"
+            placeholder="Введите сообщение..."
+            maxlength="1000"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
