@@ -52,6 +52,44 @@ body {
   text-align: center;
 }
 
+.welcome-block {
+  margin: 0 0 22px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.welcome-lead {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.welcome-reviews-title {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.welcome-reviews {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.welcome-reviews li {
+  margin-bottom: 8px;
+}
+
+.welcome-reviews li:last-child {
+  margin-bottom: 0;
+}
+
 h1,
 h2 {
   margin: 0 0 10px;
