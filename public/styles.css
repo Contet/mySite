@@ -34,6 +34,24 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
+.login-screen {
+  border: 3px solid #1e3a5f;
+  box-shadow: 0 8px 24px rgba(30, 58, 95, 0.12);
+}
+
+.login-warning {
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  border: 3px solid #b91c1c;
+  border-radius: 12px;
+  background: #fef2f2;
+  color: #991b1b;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.45;
+  text-align: center;
+}
+
 h1,
 h2 {
   margin: 0 0 10px;
@@ -97,6 +115,21 @@ p {
   gap: 10px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.incoming-toast {
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #eff6ff;
+  border: 1px solid #93c5fd;
+  color: #1e40af;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.incoming-toast.hidden {
+  display: none;
 }
 
 .messages {

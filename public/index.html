@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Переписка двух людей</title>
+    <title>massager</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.jsdelivr.net/npm/emoji-datasource-twitter/img/twitter/64/1f4ac.png"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main class="container">
-      <section id="loginView" class="card">
+      <section id="loginView" class="card login-screen">
+        <p class="login-warning" role="alert">
+          Внимание! Мать Дмитрия Толстых находится в розыске!
+        </p>
         <h1>Вход в чат</h1>
         <p>Выберите, за кого войти:</p>
 
         <div class="role-buttons">
-          <button id="person1Btn" class="btn btn-primary">Войти как Человек 1</button>
-          <button id="person2Btn" class="btn">Войти как Человек 2</button>
+          <button id="person1Btn" class="btn btn-primary">Войти как user1</button>
+          <button id="person2Btn" class="btn">Войти как user2</button>
         </div>
       </section>
 
@@ -26,6 +34,8 @@
             <button id="switchRoleBtn" class="btn btn-small">Сменить вход</button>
           </div>
         </div>
+
+        <div id="incomingToast" class="incoming-toast hidden" role="status" aria-live="polite"></div>
 
         <div id="messages" class="messages"></div>
 
